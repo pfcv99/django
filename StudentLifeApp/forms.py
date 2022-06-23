@@ -1,6 +1,6 @@
 from django import forms
-from .models import Student
-class StudentForm(forms.ModelForm):
+from .models import students
+class studentsForm(forms.ModelForm):
     class Meta:
-        model = Student
-        fields = ['id', 'rollno', 'name', 'email']
+        model = students
+        fields = ['id', 'gender', 'ageGroup', 'year', 'area']

@@ -18,7 +18,7 @@
             {% endfor %}
         {% endif%}
         <div class="row">
-            <div class="col-sm-4 text-center py-5 ">
+            <div class="col-sm-4 text-left py-5 ">
                 <div class="alert alert-info text-center">Add Student Data</div>
                 <form method="POST" novalidate> {% csrf_token %}
                     {% for form in fm %}
@@ -34,6 +34,7 @@
                 <div class="alert alert-info text-center">Student Data</div>
                 <table class="table">
                     <thead>
+                        <td>id</td>
                         <td>gender</td>
                         <td>ageGroup</td>
                         <td>year</td>
